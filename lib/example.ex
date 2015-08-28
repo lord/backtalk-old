@@ -1,4 +1,4 @@
-defmodule Example.Router do
+defmodule Testblah do
   use Backtalk.Router
 
   # GET /cats/<id>
