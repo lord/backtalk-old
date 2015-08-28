@@ -21,14 +21,6 @@ defmodule Backtalk.Router do
         |> Plug.Conn.send_resp(code, body)
       end
 
-      defp send(conn) do
-        if conn.state == :set do
-          Plug.Conn.send_resp(conn)
-        else
-          conn
-        end
-      end
-
       def start do
         {:ok, _} = Plug.Adapters.Cowboy.http __MODULE__, []
       end
