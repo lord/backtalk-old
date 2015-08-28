@@ -1,4 +1,0 @@
-Backtalk
-========
-
-** TODO: Add description **
