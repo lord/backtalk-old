@@ -15,7 +15,9 @@ defmodule Backtalk.Router do
       end
 
       defp set_reply(conn, code, headers, body) do
-        # TODO
+        conn
+        |> merge_resp_headers(headers)
+        |> send_resp(code, body)
       end
 
       defp send(conn) do
